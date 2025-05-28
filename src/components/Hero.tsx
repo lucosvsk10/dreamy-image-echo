@@ -19,11 +19,11 @@ const Hero = () => {
       }
     };
   }, []);
-  return <section id="hero" className="relative min-h-screen pt-24 flex items-center justify-center overflow-hidden bg-navy py-[9px]">
+  return <section id="hero" className="relative min-h-screen pt-24 flex items-center justify-center overflow-hidden bg-navy py-0">
       
       
-      <div ref={heroRef} className="container relative z-5 transition-all duration-700 transform opacity-0 translate-y-10 px-0 mx-0 py-0 bg-transparent">
-        <div className="border overflow-hidden backdrop-blur-sm p-10 md:p-10 border-[6px] #efc349/30 rounded-10xl py-[24px] px-[50px] mx-[20px] my-[24px] bg-transparent">
+      <div ref={heroRef} className="container relative z-5 transition-all duration-700 transform opacity-0 translate-y-0 px-0 py-0 mx-[24px] my-[200px]">
+        <div className="border overflow-hidden backdrop-blur-sm p-8 md:p-12 border-[5px] border-[#efc349] mx-[2px] px-[50px] rounded-2xl py-[50px] my-0">
           <div className="flex flex-col md:flex-row items-center justify-between gap-12">
             <div className="w-full md:w-3/5 space-y-6 animate-fade-in-right">
               <h1 className="text-4xl md:text-6xl font-anton text-gold uppercase tracking-tight leading-tight">
@@ -31,9 +31,9 @@ const Hero = () => {
               </h1>
               
               <div className="space-y-4">
-                <h2 className="text-xl md:text-2xl font-medium text-white font-prompt text-left">Seja Bem Vindo ao Site
-Oficial da WS
-Gestão Contábil</h2>
+                <h2 className="text-xl md:text-2xl font-medium text-white font-prompt">
+                  Seja Bem Vindo ao Site Oficial da WS Gestão Contábil
+                </h2>
                 <a href="#quem-somos" className="inline-block text-purple hover:text-purple-400 font-prompt font-medium transition-colors duration-300">
                   Quem Somos
                 </a>
