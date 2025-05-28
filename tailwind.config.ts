@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -18,10 +19,6 @@ export default {
 			}
 		},
 		extend: {
-			fontFamily: {
-				anton: ['Anton', 'sans-serif'],
-				prompt: ['Prompt', 'sans-serif']
-			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -80,6 +77,10 @@ export default {
 				purple: {
 					DEFAULT: '#9333ea'
 				}
+			},
+			fontFamily: {
+				sans: ['Inter', 'sans-serif'],
+				serif: ['Georgia', 'serif'],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
